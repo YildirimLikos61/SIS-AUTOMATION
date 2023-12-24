@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 				features = "src/test/resources/features/",
 				glue = "com.neotech.steps",
 				dryRun =false,
-				tags = "@EnrollStudent",
+				tags = "@Addteacher",
 				monochrome = true,
 				
 				

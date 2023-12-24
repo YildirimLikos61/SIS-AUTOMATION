@@ -17,6 +17,10 @@ public class DashboardPageElements {
 	@FindBy(xpath="//a[normalize-space()='Students']")
 	public WebElement students;
 	
+	@FindBy(xpath="//span[normalize-space()='Staff/Faculty']")
+	public WebElement staffbutton;
+	
+	
 	
 	public DashboardPageElements()
 	{
