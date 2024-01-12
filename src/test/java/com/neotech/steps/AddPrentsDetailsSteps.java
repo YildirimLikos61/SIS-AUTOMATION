@@ -18,7 +18,7 @@ public class AddPrentsDetailsSteps extends CommonMethods{
 	{
 	   click(dash.students);
 	   wait(1);
-	   selectDropDown(studentspersonal.statusDropDown,"New");
+	   selectDropDown(studentspersonal.statusDropDown,"Enrolled");
 	   wait(1);
 	  // sendKeys(studentspersonal.textField,"L M");
 	  // wait(1);
@@ -26,7 +26,7 @@ public class AddPrentsDetailsSteps extends CommonMethods{
 	   for(WebElement el:students.listofnewStudents) 
 	   {
 		   String text=el.getText().trim();
-		   if(text.equals("L M")) 
+		   if(text.equals("Yildirim Likos")) 
 		   {
 			   el.click();
 			   break;

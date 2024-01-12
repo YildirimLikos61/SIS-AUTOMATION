@@ -77,6 +77,11 @@ public class StaffFacultyPageElements {
 	@FindBy(xpath="//a[normalize-space()='Assignments']")
 	public WebElement assignment;
 	
+	@FindBy(xpath="//i[normalize-space()='Runtime Error']")
+	public WebElement runtimerror;
+	
+	@FindBy(xpath="//div[@id='birthDayCal_day_1_0']")
+	public WebElement day;
 	
 	
 	public StaffFacultyPageElements() 

@@ -45,14 +45,13 @@ public class StudentsSteps extends CommonMethods{
 	@When("I fiiled up all the section except local id, grade section, and username")
 	public void i_fiiled_up_all_the_section_except_local_id_grade_section_and_username() 
 	{
-	   
 		click(students.addnew);
 		wait(1);
 		sendKeys(studentspersonal.stateId,"MD");
 		wait(1);
-		sendKeys(studentspersonal.lastName,"Lee");
+		sendKeys(studentspersonal.lastName,"Yildirim");
 		wait(1);
-		sendKeys(studentspersonal.firstName,"Me");
+		sendKeys(studentspersonal.firstName,"Likos");
 		wait(1);
 		sendKeys(studentspersonal.middleName,"QA");
 		wait(1);
@@ -76,14 +75,20 @@ public class StudentsSteps extends CommonMethods{
 		sendKeys(studentspersonal.label,"100");
 		wait(1);
 		
-		wait(1);
-		click(studentspersonal.submitButton);
-		wait(2);
+		//click(studentspersonal.clicktochange);
+		//switchToWindow();
 		
+		//String picture=System.getProperty("user.dir")+"/scrennshots/pass/All tabs are visible22_20_2023_56_20_10.png";
+		
+		//sendKeys(studentspersonal.fileUpload,picture);
+		//click(studentspersonal.upload);
+		
+		//wait(1);
+		click(studentspersonal.submitButton);
+		wait(2);	
 	}
 	
-	
-	
+
 	@Then("i Validate success message displayed indicating student is created")
 	public void i_validate_success_message_displayed_indicating_student_is_created() 
 	{
@@ -103,11 +108,15 @@ public class StudentsSteps extends CommonMethods{
 	  wait(2);
 	  selectDropDown(studentspersonal.statusDropDown,"New");
 	  wait(1);
-	  sendKeys(studentspersonal.textField,"Lee Me");
+	  sendKeys(studentspersonal.textField,"Yildirim Likos");
 	  wait(1);
+	  
+	  selectDropDown(studentspersonal.newstudentsdropdown,"Yildirim Likos");
+	  
+	  
 	 // click(studentspersonal.searchbutton);
-	   WebElement el=studentspersonal.textField;
-	   el.sendKeys(Keys.ENTER);
+	  // WebElement el=studentspersonal.textField;
+	  // el.sendKeys(Keys.ENTER);
 	  wait(1);
 	  
 	  click(studentspersonal.enroll);
@@ -130,7 +139,7 @@ public class StudentsSteps extends CommonMethods{
 		for(WebElement el:list) 
 		{
 			String text=el.getText().trim();
-			if(text.contains("Lee Me")) 
+			if(text.contains("Yildirim Likos")) 
 			{
 				Assert.assertTrue(true);
 			}else 

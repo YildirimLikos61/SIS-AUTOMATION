@@ -75,7 +75,7 @@
 				<version>3.1.2</version>
 				<configuration>
 					<includes>
-						<include>**/*RegressionRunner.java</include>
+						<include>**/*TestRunner.java</include>
 					</includes>
 
 					<testFailureIgnore>true</testFailureIgnore>
@@ -94,7 +94,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>CucumberFrameworkYildirim</projectName>
+							<projectName>SIS-AUTOMATION</projectName>
 
 							<!-- output directory for the generated report -->
 							<outputDirectory>${project.build.directory}</outputDirectory>

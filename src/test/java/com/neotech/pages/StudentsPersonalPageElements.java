@@ -107,7 +107,7 @@ public class StudentsPersonalPageElements {
 	@FindBy(xpath="//input[@id='bEnroll']")
 	public WebElement enroll2;
 	
-	@FindBy(id="//*[@id=\"students_students\"]")
+	@FindBy(id="//*[@id='students_students']//option")
 	public List<WebElement> listofenrolledStudent;
 	
 	@FindBy(xpath="//input[@id='AutoCompleteStudentName_bStudentSelect']")
@@ -115,6 +115,13 @@ public class StudentsPersonalPageElements {
 	
 	@FindBy(xpath="//select[@id='enrollGradeSection_list']")
 	public WebElement gradeSection;
+	
+	@FindBy(xpath="//input[@id='tPassword']")
+	public WebElement password;
+	
+	
+	@FindBy(xpath="//select[@id='students_students']")
+	public WebElement newstudentsdropdown;
 	
 	
 	public StudentsPersonalPageElements()

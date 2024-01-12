@@ -145,8 +145,11 @@ public class CommonMethods extends PageInitializer{
 	public static void switchToWindow() 
 	{
 		Set<String> set=driver.getWindowHandles();	
+		
 		Iterator<String> it=set.iterator();
+		
 		String wind1=it.next();
+		
 		String wind2=it.next();
 		
 		driver.switchTo().window(wind2);
